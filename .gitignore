@@ -14,3 +14,5 @@ node_modules
 .vendor
 .direnv
 /.obsidian/
+/.trash/
+/.idea/
