@@ -913,6 +913,8 @@ a:focus {
   color: var(--subtext0-color);
   margin-top: 25px;
 }
+
+
 .side-catalog .catalog-body .active a {
   color: #7287fd;
 }
