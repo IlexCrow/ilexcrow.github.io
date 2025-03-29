@@ -21,3 +21,5 @@ $$
 Why does in-line work, but not display??
 
 The issue with hynduf's blog is that it's too well-made. You've gotta give me somewhere to improve?
+
+![](/assets/Pasted%20image%2020250329133319.png)
