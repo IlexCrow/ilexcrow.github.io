@@ -9,11 +9,11 @@
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
-                    Powered by <a href="http://hynduf.github.io">HynDuf Blog</a> |
+                    Powered by <a href="http://ilexcrow.github.io">Ilex Blog</a> | <!-- One day I will do one of these from scratch. But for now I would like to start writing garbage articles :3 -->
                     <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
                         height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=hynduf&repo=hynduf.github.io&type=star&count=true">
-                    </iframe>
+                        src="https://ghbtns.com/github-btn.html?user=ilexcrow&repo=ilexcrow.github.io&type=star&count=true">
+                    </iframe> <!-- In my defense, it's nearly exam season. -->
                 </p>
             </div>
         </div>
@@ -94,7 +94,7 @@
 
 {% if page.title == 'ARCHIVE' %}
 <!-- jquery.tagcloud.js -->
-<script>
+<script> <!-- Gorgeous. Love it. Honestly main reason I picked this repo to fork (That and there arn't all that many catppuccin jekyll themes annoyingly. -->
     async('{{ "/js/jquery.tagcloud.js" | prepend: site.baseurl }}', function () {
 	    let theme = sessionStorage.getItem('theme');
         let colorStart, colorEnd;
@@ -231,59 +231,59 @@
 {% endunless %}
 
 
-<!-- Multi-Lingual -->
-{% if page.multilingual %}
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $vi = document.querySelector(".vi");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
+<!--&lt;!&ndash; Multi-Lingual &ndash;&gt;-->
+<!--{% if page.multilingual %}-->
+<!--&lt;!&ndash; Handle Language Change &ndash;&gt;-->
+<!--<script type="text/javascript">-->
+<!--    // get nodes-->
+<!--    var $vi = document.querySelector(".vi");-->
+<!--    var $en = document.querySelector(".en");-->
+<!--    var $select = document.querySelector("select");-->
 
-    // Changes at v1.8.1: include lang flag as a url query. This interop well with catalog hash anchors.
-    function getLang() { return new URLSearchParams(document.location.search).get("lang") }
+<!--    // Changes at v1.8.1: include lang flag as a url query. This interop well with catalog hash anchors.-->
+<!--    function getLang() { return new URLSearchParams(document.location.search).get("lang") }-->
 
-    function setLang(newLang) {
-        var params = new URLSearchParams(document.location.search)
-        params.set("lang", newLang)
-        document.location.search = params.toString()  // refresh.
-    }
+<!--    function setLang(newLang) {-->
+<!--        var params = new URLSearchParams(document.location.search)-->
+<!--        params.set("lang", newLang)-->
+<!--        document.location.search = params.toString()  // refresh.-->
+<!--    }-->
 
-    // handle render
-    function _render() {
-        var lang = getLang()
-        // Fallback to English if `lang` is empty
-        if (lang == "en") {
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $en.classList.add("active");
-            $vi.style.display = "none";
-            $vi.classList.remove("active");
-        } else {
-            $select.selectedIndex = 0;
-            $vi.style.display = "block";
-            $vi.classList.add("active");
-            $en.style.display = "none";
-            $en.classList.remove("active");
-        }
-        // interop with catalog 
-        generateCatalog(".catalog-body");
-    }
+<!--    // handle render-->
+<!--    function _render() {-->
+<!--        var lang = getLang()-->
+<!--        // Fallback to English if `lang` is empty-->
+<!--        if (lang == "en") {-->
+<!--            $select.selectedIndex = 1;-->
+<!--            $en.style.display = "block";-->
+<!--            $en.classList.add("active");-->
+<!--            $vi.style.display = "none";-->
+<!--            $vi.classList.remove("active");-->
+<!--        } else {-->
+<!--            $select.selectedIndex = 0;-->
+<!--            $vi.style.display = "block";-->
+<!--            $vi.classList.add("active");-->
+<!--            $en.style.display = "none";-->
+<!--            $en.classList.remove("active");-->
+<!--        }-->
+<!--        // interop with catalog -->
+<!--        generateCatalog(".catalog-body");-->
+<!--    }-->
 
-    // handle select change
-    function onLanChange(index) {
-        if (index == 0) {
-            lang = "vi"
-        } else {
-            lang = "en"
-        }
-        setLang(lang)
-    }
+<!--    // handle select change-->
+<!--    function onLanChange(index) {-->
+<!--        if (index == 0) {-->
+<!--            lang = "vi"-->
+<!--        } else {-->
+<!--            lang = "en"-->
+<!--        }-->
+<!--        setLang(lang)-->
+<!--    }-->
 
-    // init
-    _render();
-</script>
-{% endif %}
+<!--    // init-->
+<!--    _render();-->
+<!--</script>-->
+<!--{% endif %}-->
 
 <!-- Simple Jekyll Search -->
 <script>
