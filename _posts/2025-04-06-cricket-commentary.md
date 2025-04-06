@@ -42,8 +42,11 @@ return c.update(a.join("~")),
 	s.join("~")
 ```
 Which ends up with `s` being the Token string. `this.options` can be found with dev-tools via a break-point.
-## Reproducing with Node
-This can be reproduced with nodeJS, which I have done [here](https://github.com/IlexCrow/cricinfo-api/blob/main/index.js#L36). In this script I have also added some nice display code (Aside from the lack of line-wrapping):
+## [Reproducing with Node](https://github.com/IlexCrow/cricinfo-api)
+This can be reproduced with nodeJS, which I have done [here](https://github.com/IlexCrow/cricinfo-api/blob/main/index.js#L36). 
+In this script I have also added some nice display code (Aside from the lack of line-wrapping):
 ![](assets/2025-04-06-cricket-commentary-20250406145242780.webp)
 On the Cricinfo website for comparison:
 ![](assets/2025-04-06-cricket-commentary-20250406145317858.webp)
+
+This is more or less as much as the research group needed so I left it at that. But if anyone else happens to be doing the extremely obscure task of scraping cricinfo, hopefully this will give them a head-start.
