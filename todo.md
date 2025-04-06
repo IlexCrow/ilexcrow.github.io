@@ -1,0 +1,3 @@
+ - Github link in properties
+ - "Hide yap" button
+ - Fix contents going over comments section

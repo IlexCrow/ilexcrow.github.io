@@ -62,7 +62,7 @@ LaTeX equations also work properly in the comments, which feels a little tauntin
 ## Future plans
 As mentioned before, I plan on further customising this site, but for now I am probably going to focus on other projects.
 
-I have a short project involving webscraping some data for a research group(~) I am part of that I did only a couple weeks ago that I may write up as a blog post as it was honestly quite interesting (if a little niche).
+I have a short project involving webscraping some data for a research group(~) that I am part of that I did only a couple weeks ago that I may write up as a blog post as it was honestly quite interesting (if a little niche).
 
 Hopefully I will remain motivated. 
 
